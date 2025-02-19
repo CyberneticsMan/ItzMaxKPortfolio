@@ -74,7 +74,7 @@ function updateCount(counter, startTime) {
         counter.innerText = Math.ceil(increment).toLocaleString();
         requestAnimationFrame(() => updateCount(counter, startTime));
     } else {
-        counter.innerText = target.toLocaleString();
+        counter.innerText = target.toLocaleString() + '+';
     }
 }
 
