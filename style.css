@@ -611,3 +611,12 @@ body {
   padding: 2rem;
   text-align: center;
 }
+
+.glow-divider {
+  width: 100px;
+  height: 2px;
+  background: var(--primary-color);
+  margin: 1rem auto;
+  color: var(--primary-color);
+  box-shadow: 0 0 20px var(--glow-color);
+}

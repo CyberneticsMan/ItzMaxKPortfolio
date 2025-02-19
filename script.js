@@ -71,7 +71,8 @@ function updateCount(counter, startTime) {
     const increment = target * easedProgress;
 
     if (progress < 1) {
-        counter.innerText = Math.ceil(increment).toLocaleString();
+        const currentCount = Math.ceil(increment).toLocaleString();
+        counter.innerText = currentCount.padStart(target.toLocaleString().length, '0') + '+';
         requestAnimationFrame(() => updateCount(counter, startTime));
     } else {
         counter.innerText = target.toLocaleString() + '+';
